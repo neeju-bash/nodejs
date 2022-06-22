@@ -1,0 +1,12 @@
+Install Modules with npm install
+npm install <module>
+npm install express
+
+When you're running npm install to install a module, you can add the optional flag --save to the command. This flag will add the module as a dependency
+of your project to the project's package.json as an entry in dependencies.
+npm install <module> --save (save changes in package.json)
+
+In addition to triggering an install of a single module, you can actually trigger the installation of all modules that are listed as dependencies and
+devDependencies in the package.json in the current directory. To do so, you'll simply need to run the command itself:
+
+npm install
