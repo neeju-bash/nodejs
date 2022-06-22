@@ -10,3 +10,10 @@ In addition to triggering an install of a single module, you can actually trigge
 devDependencies in the package.json in the current directory. To do so, you'll simply need to run the command itself:
 
 npm install
+
+Install Modules and Save Them to Your package.json as a Developer dependency
+There's a flag that is nearly an exact duplicate, in terms of functionality, of the --save flag when installing a module: --save-dev. 
+There are a few a key differences between the two - instead of saving the module being installed and added to package.json as an entry in dependencies,
+it will save it as an entry in the devDependencies.
+
+npm install <module> --save-dev
