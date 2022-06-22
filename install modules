@@ -22,3 +22,11 @@ UNINSTALL
 
 npm uninstall <module> --save
 npm uninstall <module> --save-dev
+
+
+INSTALL UNINSTALL globally
+
+npm install <module> -g
+npm uninstall <module> -g
+npm remove <module> -g
+npm rm <module> -g
