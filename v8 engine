@@ -1,0 +1,13 @@
+V8 is a C++-based open-source JavaScript engine developed by Google. It was originally designed for Google Chrome and Chromium-based browsers (such as Brave) 
+in 2008, but it was later utilized to create Node.js for server-side coding. In reality, JSON-based No-SQL databases like Couchbase and the widely used MongoDB
+use the V8 engine. V8 also powers Electron, a prominent desktop application framework, and Demo, the latest server-side runtime environment.
+
+V8 is known to be a JavaScript engine because it takes JavaScript code and executes it while browsing in Chrome. It provides a runtime environment for the
+execution of JavaScript code. The best part is that the JavaScript engine is completely independent of the browser in which it runs. This is the feature that
+led Node.js designers to choose the V8 engine to power the framework, and the rest is history. The V8 engine was also utilized to construct desktop frameworks 
+and databases as Node.JS grew in popularity.
+
+A JavaScript Engine is an interpreter that interprets JavaScript code and runs it. The first way to develop a JavaScript engine is to implement it
+as a standard interpreter, as done by Mozilla’s SpiderMonkey. The other option is to employ Just-in-Time (JIT) compilation, which turns native JavaScript
+code to machine code as V8 does. The distinction between V8 code and other programming languages is that it does not generate intermediate code.
+
