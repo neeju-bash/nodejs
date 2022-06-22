@@ -1,0 +1,14 @@
+The following command will update all the packages to the latest minor version
+npm update --save
+
+To update single package on the command line, run the following command:
+npm update <module> --save
+
+To update dev package on the command line, run the following command:
+npm update --dev --save -dev
+
+To update all global packages on the command line, run the following command:
+npm update -g
+
+To update single global package on the command line, run the following command:
+npm update -g <module>
