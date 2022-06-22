@@ -17,3 +17,8 @@ There are a few a key differences between the two - instead of saving the module
 it will save it as an entry in the devDependencies.
 
 npm install <module> --save-dev
+
+UNINSTALL
+
+npm uninstall <module> --save
+npm uninstall <module> --save-dev
