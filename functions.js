@@ -1,3 +1,5 @@
+var timer= require('.\timer')
+timer();
 function sayhi()
 {
     console.log('hi')
