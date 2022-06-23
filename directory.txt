@@ -1,0 +1,40 @@
+1. Create a directory Synchronously
+Syntax:
+fs.mkdirSync(path[, options])
+path: Name of the file or location
+
+fs.mkdirSync('node');
+
+
+2.Delete directory Synchronously.
+Syntax:
+fs.unlinkSync(path)
+path: Name of the file or location
+
+fs.rmdirSync('node');
+
+
+1.Create a directory Asynchronously
+Syntax:
+fs.mkdir(path[, options], callback)
+path: Name of the file or location
+callback: function
+err: error
+Example:
+
+fs.mkdir('node',function(){
+    fs.writeFileSync('./node/myText.txt',"Hello World!!");
+});
+
+
+2. Delete directory Asynchronously
+Syntax:
+
+fs.unlink(path, callback)
+
+path: Name of the file or location
+callback: function
+err: error
+fs.unlink('./node/myText.txt',function(){
+    fs.rmdir('node');
+});
