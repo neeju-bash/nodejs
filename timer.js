@@ -7,4 +7,3 @@ var timer = setInterval(function(){
     }
 },2000);
 
-module.exports=timer;

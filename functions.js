@@ -1,5 +1,5 @@
-var timer= require('.\timer')
-timer();
+var counter= require('./count')
+console.log(counter(['Neeraj','Mohan','MC']));
 function sayhi()
 {
     console.log('hi')
