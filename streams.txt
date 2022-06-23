@@ -1,3 +1,5 @@
+To handle and manipulate streaming data like a video, a large file, etc., we need streams in Node. 
+The streams module in Node.js manages all streams.
 Types of Streams
 In Node, there are four different types of streams:
 
