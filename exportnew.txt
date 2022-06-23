@@ -1,0 +1,23 @@
+The module.exports is a special object which is included in every JavaScript file in the Node.js
+ application by default. The module is a variable that represents the current module, and exports
+  is an object that will be exposed as a module. So, whatever you assign to module.exports will be 
+  exposed as a module.
+
+Message.js
+exports.SimpleMessage = 'Hello world';
+
+app.js
+var msg = require('./Messages.js');
+
+console.log(msg.SimpleMessage);
+
+You can also attach an object to module.exports, as shown below.
+
+data.js 
+module.exports = {
+    firstName: 'James',
+    lastName: 'Bond'
+}
+app.js 
+var person = require('./data.js');
+console.log(person.firstName + ' ' + person.lastName);
