@@ -1,0 +1,32 @@
+JavaScript Object Notation, referred to as JSON in short, is one of the most popular formats for data storage 
+and data interchange over the internet. The simplicity of the JSON syntax makes it very easy for humans and 
+machines to read and write.
+
+Despite its name, the use of the JSON data format is not limited to JavaScript. Most programming languages
+ implement data structures that you can easily convert to JSON and vice versa.
+
+JavaScript, and therefore the Node.js runtime environment, is no exception. More often than not, this JSON
+ data needs to be read from or written to a file for persistence. The Node runtime environment has the built-in
+  fs module specifically for working with files.
+
+This article is a comprehensive guide on how to use the built-in fs module to read and write data in JSON format.
+ We shall also look at some third party npm packages that simplify working with data in the JSON format.
+
+Serializing and deserializing JSON
+Serialization is the process of modifying an object or data structure to a format that is easy to store or 
+transfer over the internet. You can recover the serialized data by applying the reverse process.
+
+Deserialization refers to transforming the serialized data structure to its original format.
+
+You will almost always need to serialize JSON or JavaScript object to a JSON string in Node. You can do
+ so with the JSON.stringify method before writing it to a storage device or transmitting it over the internet:
+
+const config = { ip: '1234.22.11', port: 3000};
+console.log(JSON.stringify(config));
+On the other hand, after reading the JSON file, you will need to deserialize the JSON string to a plain 
+JavaScript object using the JSON.parse method before accessing or manipulating the data:
+
+const config = JSON.stringify({ ip: '1234.22.11', port: 3000});
+console.log(JSON.parse(config));
+JSON.stringify and JSON.parse are globally available methods in Node. You don’t need to install or
+ require before using.
