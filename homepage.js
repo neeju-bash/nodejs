@@ -28,7 +28,15 @@ var server = http.createServer(function (req, res) {   //create web server
        res.end();
     
     }
-    else
+    else if (req.url == "/studentdetails") {
+        
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+       // res.write('<html><body><p>This is student Page.</p></body></html>');
+       // res.end();
+       var students=[{name:'neeraj',age:'24'},{name:'mysi',age:'27'}];
+       res.end(JSON.stringify(students));
+    }
+    else 
         res.end('Invalid Request!');
 
 });
