@@ -2,7 +2,7 @@ var fs = require("fs");
 var data = '';
 
 // Create a readable stream
-var readerStream = fs.createReadStream('input.txt');
+var readerStream = fs.createReadStream('streams.txt');
 
 // Set the encoding to be utf8. 
 readerStream.setEncoding('UTF8');
